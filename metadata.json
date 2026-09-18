@@ -1,0 +1,6 @@
+{
+  "name": "FUNCTIONAL REHAB LAB",
+  "description": "Cloud-based clinical management and patient portal for Functional Rehab Lab. Appointments, prescriptions, professional invoices, biomechanical patient analysis, WhatsApp integration, and notifications.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

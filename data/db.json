@@ -1,0 +1,399 @@
+{
+  "users": [
+    {
+      "id": "doc-1",
+      "username": "Dr_AnandGR",
+      "role": "doctor",
+      "fullName": "Dr. Anand G R (PT)",
+      "email": "anand@functionalrehablab.com",
+      "phone": "+91 80885 96486",
+      "gender": "Male",
+      "age": 38,
+      "specialty": "Lead Physiotherapist & Sports Rehab Specialist",
+      "medicalHistory": "",
+      "emergencyContact": "+91 80885 96486",
+      "createdAt": "2026-09-18T14:19:14.874Z",
+      "passwordHash": "6e77813c0398f612920f6d810aff617aafd4fa008d40e97a5b0b88b86437410376ad8ea367d3788094211ecccb1e18fba44cdf45719dc34cc2cc2402583ef67d",
+      "salt": "8172c68fec859ab9cb042bba91bfa741"
+    },
+    {
+      "id": "admin-1",
+      "username": "Cloudfare",
+      "role": "admin",
+      "fullName": "Clinical Director & Operations Admin",
+      "email": "admin@functionalrehablab.com",
+      "phone": "+91 80885 96486",
+      "gender": "Male",
+      "age": 40,
+      "specialty": "Clinical Operations & Biomechanical Diagnostics",
+      "medicalHistory": "",
+      "emergencyContact": "+91 80885 96486",
+      "createdAt": "2026-09-18T14:19:14.874Z",
+      "passwordHash": "51f15d6810fbf491af2192cbeb34342a275b50c73eb241613d6d27496b9a14487c938327b253ec185d2c76cd25ace0f9d487e68ec84bdf1ec6e7fd2825ff564d",
+      "salt": "4ff18a76fc27aad1f60c16b4a5eb45d5"
+    },
+    {
+      "id": "pat-1",
+      "username": "rohit_sharma",
+      "role": "patient",
+      "fullName": "Rohit Sharma",
+      "email": "rohit.s@example.com",
+      "phone": "+91 98451 22345",
+      "gender": "Male",
+      "age": 32,
+      "medicalHistory": "Right knee ACL grade-2 sprain during marathon training, chronic lower back stiffness.",
+      "emergencyContact": "Mrs. Neha Sharma (+91 98451 99887)",
+      "createdAt": "2026-09-18T14:19:14.874Z",
+      "passwordHash": "9634d6401b768c381edaf48e323d3f08b326d1fa9093a7e33d622e59924e56a0bba4240dd365dd4ef704200ca88dda86c4764b05285d6b3edd6b5f1816cfddb3",
+      "salt": "9e55910d23937466a8e0b1bc40d29744"
+    },
+    {
+      "username": "test_athlete",
+      "role": "patient",
+      "fullName": "Vikram Athlete",
+      "email": "vikram@sports.in",
+      "phone": "+91 9988776655",
+      "gender": "Unspecified",
+      "medicalHistory": "",
+      "emergencyContact": "",
+      "passwordHash": "035485f4409f807758cd189ff6a4e968e7a163ac01aab15541f28608f7dd954d06b494303f03813a24e1518b7c761672d2c171c3f5a6f6c202521f2eb15cffad",
+      "salt": "ec845606f29467b735a9632c246518df",
+      "id": "pat-1789741172033-f5201e",
+      "createdAt": "2026-09-18T14:19:32.033Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "acdd0dcf05db967bd24b9a38f29d50902640f6fe1cc575fd6c2788add39052cf",
+      "userId": "doc-1",
+      "expiresAt": 1792333163193
+    },
+    {
+      "token": "f758e7c2df854e25ee6e26f4145209f59b2dbc130f295457e37ad5aebbf5947e",
+      "userId": "admin-1",
+      "expiresAt": 1792333168795
+    },
+    {
+      "token": "cd6b1eb9f1362ce008fe93d9cbeba56a17fe7f4e699d65f5b034c65e6e642f75",
+      "userId": "pat-1789741172033-f5201e",
+      "expiresAt": 1792333172033
+    }
+  ],
+  "appointments": [
+    {
+      "id": "apt-101",
+      "patientId": "pat-1",
+      "patientName": "Rohit Sharma",
+      "patientPhone": "+91 98451 22345",
+      "patientEmail": "rohit.s@example.com",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Anand G R (PT)",
+      "service": "Sports Injury & Athletic Performance Rehab",
+      "date": "2026-09-16",
+      "timeSlot": "10:30 AM",
+      "status": "Completed",
+      "notes": "Initial evaluation for right knee stability and quad inhibition.",
+      "rehabGoals": "Restore full knee terminal extension, reduce patellofemoral pain.",
+      "invoiceId": "inv-101",
+      "fee": 1500,
+      "createdAt": "2026-09-15T14:19:14.874Z",
+      "updatedAt": "2026-09-16T14:19:14.874Z"
+    },
+    {
+      "id": "apt-102",
+      "patientId": "pat-1",
+      "patientName": "Rohit Sharma",
+      "patientPhone": "+91 98451 22345",
+      "patientEmail": "rohit.s@example.com",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Anand G R (PT)",
+      "service": "Sports Injury & Athletic Performance Rehab",
+      "date": "2026-09-18",
+      "timeSlot": "04:00 PM",
+      "status": "Confirmed",
+      "notes": "Session 2: Closed-kinetic chain strengthening and dry needling on vastus medialis.",
+      "rehabGoals": "Improve single leg balance and eccentric control.",
+      "invoiceId": "inv-102",
+      "fee": 1500,
+      "createdAt": "2026-09-17T14:19:14.874Z",
+      "updatedAt": "2026-09-17T14:19:14.874Z"
+    },
+    {
+      "patientId": "pat-1789741172033-f5201e",
+      "patientName": "Vikram Athlete",
+      "patientPhone": "+91 9988776655",
+      "patientEmail": "vikram@sports.in",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Anand G R (PT)",
+      "service": "Sports Injury Rehabilitation",
+      "date": "2026-09-25",
+      "timeSlot": "10:30 AM",
+      "status": "Confirmed",
+      "notes": "Hamstring pull during training",
+      "rehabGoals": "",
+      "fee": 1500,
+      "id": "apt-1789741177967-7bc1",
+      "invoiceId": "inv-1789741177967-35ee",
+      "createdAt": "2026-09-18T14:19:37.967Z",
+      "updatedAt": "2026-09-18T14:19:37.967Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv-101",
+      "invoiceNumber": "FRL-INV-2026-0089",
+      "appointmentId": "apt-101",
+      "patientId": "pat-1",
+      "patientName": "Rohit Sharma",
+      "patientPhone": "+91 98451 22345",
+      "doctorName": "Dr. Anand G R (PT)",
+      "date": "2026-09-16",
+      "items": [
+        {
+          "description": "Sports Injury & Athletic Performance Rehab (Initial Assessment)",
+          "code": "REHAB-SPT-01",
+          "amount": 1500,
+          "qty": 1
+        }
+      ],
+      "subtotal": 1500,
+      "tax": 0,
+      "discount": 0,
+      "total": 1500,
+      "paymentStatus": "Paid",
+      "paymentMethod": "UPI / Card",
+      "clinicInfo": {
+        "name": "FUNCTIONAL REHAB LAB",
+        "tagline": "Advanced Orthopedic & Sports Kinetic Rehabilitation Center",
+        "address": "#14, 2nd Floor, 100ft Road, Indiranagar, Bengaluru, Karnataka 560038",
+        "phone": "+91 80885 96486",
+        "email": "care@functionalrehablab.com",
+        "gstin": "29AABCF9241K1ZP"
+      },
+      "createdAt": "2026-09-15T14:19:14.874Z"
+    },
+    {
+      "id": "inv-102",
+      "invoiceNumber": "FRL-INV-2026-0094",
+      "appointmentId": "apt-102",
+      "patientId": "pat-1",
+      "patientName": "Rohit Sharma",
+      "patientPhone": "+91 98451 22345",
+      "doctorName": "Dr. Anand G R (PT)",
+      "date": "2026-09-18",
+      "items": [
+        {
+          "description": "Sports Injury & Athletic Performance Rehab (Session 2)",
+          "code": "REHAB-SPT-02",
+          "amount": 1500,
+          "qty": 1
+        }
+      ],
+      "subtotal": 1500,
+      "tax": 0,
+      "discount": 0,
+      "total": 1500,
+      "paymentStatus": "Paid",
+      "paymentMethod": "UPI / Card",
+      "clinicInfo": {
+        "name": "FUNCTIONAL REHAB LAB",
+        "tagline": "Advanced Orthopedic & Sports Kinetic Rehabilitation Center",
+        "address": "#14, 2nd Floor, 100ft Road, Indiranagar, Bengaluru, Karnataka 560038",
+        "phone": "+91 80885 96486",
+        "email": "care@functionalrehablab.com",
+        "gstin": "29AABCF9241K1ZP"
+      },
+      "createdAt": "2026-09-17T14:19:14.874Z"
+    },
+    {
+      "id": "inv-1789741177967-35ee",
+      "invoiceNumber": "FRL-INV-2026-0103",
+      "appointmentId": "apt-1789741177967-7bc1",
+      "patientId": "pat-1789741172033-f5201e",
+      "patientName": "Vikram Athlete",
+      "patientPhone": "+91 9988776655",
+      "doctorName": "Dr. Anand G R (PT)",
+      "date": "2026-09-25",
+      "items": [
+        {
+          "description": "Sports Injury Rehabilitation",
+          "code": "REHAB-SPO",
+          "amount": 1500,
+          "qty": 1
+        }
+      ],
+      "subtotal": 1500,
+      "tax": 0,
+      "discount": 0,
+      "total": 1500,
+      "paymentStatus": "Paid",
+      "paymentMethod": "UPI / Card",
+      "clinicInfo": {
+        "name": "FUNCTIONAL REHAB LAB",
+        "tagline": "Advanced Orthopedic & Sports Kinetic Rehabilitation Center",
+        "address": "#14, 2nd Floor, 100ft Road, Indiranagar, Bengaluru, Karnataka 560038",
+        "phone": "+91 80885 96486",
+        "email": "care@functionalrehablab.com",
+        "gstin": "29AABCF9241K1ZP"
+      },
+      "createdAt": "2026-09-18T14:19:37.967Z"
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": "rx-101",
+      "patientId": "pat-1",
+      "patientName": "Rohit Sharma",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Anand G R (PT)",
+      "appointmentId": "apt-101",
+      "date": "2026-09-16",
+      "diagnosis": "Right Knee Grade-II Anterior Cruciate Ligament (ACL) Strain & VMO Weakness",
+      "symptoms": "Anterior knee pain on descending stairs, mild swelling, quadriceps lag.",
+      "exercises": [
+        {
+          "id": "ex-1",
+          "name": "Straight Leg Raise with Isometric Quad Contraction",
+          "sets": 3,
+          "repsOrDuration": "15 reps (5 sec hold)",
+          "frequency": "Twice daily",
+          "notes": "Focus on full terminal extension with ankle dorsiflexed."
+        },
+        {
+          "id": "ex-2",
+          "name": "Terminal Knee Extension (TKE) with Green Resistance Band",
+          "sets": 3,
+          "repsOrDuration": "20 reps",
+          "frequency": "Daily morning & evening",
+          "notes": "Keep knee tracking directly over 2nd toe; no inward collapse."
+        },
+        {
+          "id": "ex-3",
+          "name": "Wall Squat Hold with Yoga Block between Thighs",
+          "sets": 4,
+          "repsOrDuration": "30 seconds hold",
+          "frequency": "Once daily",
+          "notes": "Bend knees up to 60 degrees only. Squeeze block gently."
+        },
+        {
+          "id": "ex-4",
+          "name": "Single-Leg Proprioceptive Balance on Foam Mat",
+          "sets": 3,
+          "repsOrDuration": "45 seconds each leg",
+          "frequency": "Daily",
+          "notes": "Maintain micro-bend in knee; engage abdominal core."
+        }
+      ],
+      "medications": [
+        {
+          "id": "med-1",
+          "name": "Ice Therapy (Cryo-compression cup)",
+          "dosage": "15-20 mins",
+          "frequency": "3 times / day",
+          "duration": "7 days",
+          "instructions": "Apply immediately post-exercise sessions."
+        },
+        {
+          "id": "med-2",
+          "name": "Topical Arnica / Diclofenac Gel",
+          "dosage": "Pea-sized amount",
+          "frequency": "Twice daily",
+          "duration": "5 days",
+          "instructions": "Gentle circular application around peripatellar tendon."
+        }
+      ],
+      "precautions": [
+        "Avoid deep squats past 90 degrees or heavy impact running until re-evaluated.",
+        "Wear supportive footwear during all rehabilitation drills.",
+        "Cease any exercise immediately if sharp pain (> 3/10 visual analogue scale) is felt."
+      ],
+      "lifestyleAdvice": "Elevate right leg while sitting at desk. Maintain adequate hydration and high-collagen protein intake for connective tissue repair.",
+      "nextFollowUp": "2026-09-19",
+      "createdAt": "2026-09-16T14:19:14.874Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "recipientId": "pat-1",
+      "senderId": "doc-1",
+      "senderName": "Dr. Anand G R (PT)",
+      "title": "Rehabilitation Protocol Assigned",
+      "message": "Dr. Anand has uploaded your customized ACL recovery exercises and precautions. Review your prescription tab.",
+      "type": "prescription",
+      "readBy": [],
+      "createdAt": "2026-09-16T14:19:14.874Z"
+    },
+    {
+      "id": "notif-2",
+      "recipientId": "pat-1",
+      "senderId": "doc-1",
+      "senderName": "Dr. Anand G R (PT)",
+      "title": "Appointment Confirmed for Today",
+      "message": "Your session for Sports Injury & Athletic Performance Rehab is scheduled at 04:00 PM. Please wear athletic clothing.",
+      "type": "appointment",
+      "readBy": [],
+      "createdAt": "2026-09-18T10:19:14.874Z"
+    },
+    {
+      "id": "notif-3",
+      "recipientId": "ALL",
+      "senderId": "admin-1",
+      "senderName": "Clinical Director",
+      "title": "Functional Rehab Lab Biomechanics Update",
+      "message": "New high-speed wireless EMG kinetic sensors installed at our gait diagnostic lab. Book with your doctor for advanced screening.",
+      "type": "clinical_alert",
+      "readBy": [],
+      "createdAt": "2026-09-17T14:19:14.874Z"
+    },
+    {
+      "recipientId": "pat-1789741172033-f5201e",
+      "senderId": "doc-1",
+      "senderName": "Dr. Anand G R (PT)",
+      "title": "Appointment & Invoice Generated",
+      "message": "Your booking for Sports Injury Rehabilitation on 2026-09-25 at 10:30 AM has been confirmed. Invoice #FRL-INV-2026-0103 issued.",
+      "type": "appointment",
+      "readBy": [],
+      "link": "/invoices/inv-1789741177967-35ee",
+      "id": "notif-1789741177967-df6a",
+      "createdAt": "2026-09-18T14:19:37.967Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "srv-1",
+      "name": "Sports Injury & Athletic Performance Rehab",
+      "duration": "45 mins",
+      "fee": 1500,
+      "description": "Targeted biomechanical recovery, joint mobilization, eccentric loading, and return-to-sport protocols."
+    },
+    {
+      "id": "srv-2",
+      "name": "Spine, Cervical & Posture Realignment",
+      "duration": "45 mins",
+      "fee": 1400,
+      "description": "McKenzie approach, core kinetic chain activation, lumbar decompression, and postural correction."
+    },
+    {
+      "id": "srv-3",
+      "name": "Post-Surgical Orthopedic Rehabilitation",
+      "duration": "60 mins",
+      "fee": 1800,
+      "description": "ACL reconstruction, meniscus, rotator cuff, and total joint replacement recovery protocol."
+    },
+    {
+      "id": "srv-4",
+      "name": "Dry Needling & Advanced Manual Therapy",
+      "duration": "40 mins",
+      "fee": 1600,
+      "description": "Myofascial trigger point release, neuro-fascial modulation, and neuromuscular stimulation."
+    },
+    {
+      "id": "srv-5",
+      "name": "Biomechanical Gait & Movement Screening",
+      "duration": "50 mins",
+      "fee": 2000,
+      "description": "High-speed kinetic video analysis, plantar pressure distribution, and functional movement assessment."
+    }
+  ]
+}
